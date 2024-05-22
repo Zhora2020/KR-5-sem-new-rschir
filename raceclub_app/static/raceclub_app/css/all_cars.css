@@ -1,0 +1,33 @@
+ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    list-style-type: none;
+    background-color: white;
+    width: 90%;
+    max-width: 35rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    padding: 5px;
+}
+
+ul li {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.feedback {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+html {
+    background-color: #FFFFE0;
+}

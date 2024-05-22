@@ -1,0 +1,22 @@
+{% extends 'raceclub_app/base.html'%}
+
+
+{% block title %} Модель {{cars.name}}{% endblock %}
+
+
+{% block content %}
+<h2>Модель: {{car.car_name}}</h2>
+<h2>Цена модели: {{car.car_price}}</h2>
+<h2>Привод: {{car.car_drive_unit}}</h2>
+<h2>Разгон: {{car.car_overclocking}}</h2>
+<h2>Рейтинг модели: {{car.car_rating}}</h2>
+<h2>Трансмиссия: {{car.car_transmission}}</h2>
+<hr>
+<h2>Характеристики {{car.car_name}}</h2>
+<h2>Страна производства: {{car.characteristic.producing_country}}</h2>
+<h2>Дата начала производства: {{car.characteristic.car_release}}</h2>
+<h2>Мощность: {{car.characteristic.horsepower}} Л. с.</h2>
+<h2>Тип кузова: {{car.characteristic.car_body}}</h2>
+<h2>Количество дверей: {{car.characteristic.car_number_of_doors}}</h2>
+<h2>Положение руля: {{car.characteristic.rudder_position}}</h2>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'raceclub_app/base.html'%}
+
+{% load static %}
+
+{% block css_additional %}
+    <link rel="stylesheet" href="{% static 'raceclub_app/css/all_cars.css' %}">
+{% endblock %}
+
+{% block title %}
+    Все машины
+{% endblock %}
+
+
+{% block content %}
+
+    <h2>Список всех машин</h2>
+
+    <ul>
+        {%for car in cars%}
+        <li><a href="{{car.get_url}}">{{car.car_name}}</a></li>
+        {%endfor%}
+    </ul>
+
+    <br>
+
+    <a href="/feedback" class="feedback">Оставить отзыв:</a>
+
+{% endblock %}
